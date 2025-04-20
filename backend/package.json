@@ -5,7 +5,7 @@
   "main": "dist/server.js",
   "scripts": {
     "dev": "nodemon src/server.ts",
-    "build": "tsc && ncp src/data/products.json dist/data/products.json",
+    "build": "tsc && mkdir -p dist/data && cp src/data/products.json dist/data/products.json",
     "start": "node dist/server.js"
   },
   "keywords": [],
@@ -20,7 +20,6 @@
     "@types/cors": "^2.8.17",
     "@types/express": "^5.0.1",
     "@types/node": "^22.14.1",
-    "ncp": "^2.0.0",
     "nodemon": "^3.1.9",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
