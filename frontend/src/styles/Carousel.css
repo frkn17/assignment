@@ -1,0 +1,56 @@
+@import "swiper/css";
+@import "swiper/css/navigation";
+@import "swiper/css/pagination";
+@import "swiper/css/scrollbar";
+@import "swiper/css/effect-coverflow";
+
+.carousel-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.swiper {
+  padding-bottom: 48px;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #333;
+  font-size: 20px;
+}
+
+.swiper-pagination-bullet {
+  background: #ccc;
+  opacity: 0.6;
+}
+
+.swiper-pagination-bullet-active {
+  background: #333;
+  opacity: 1;
+}
+
+@media screen and (max-width: 480px) {
+  .carousel-container {
+    padding: 24px 12px; 
+  }
+
+  .swiper {
+    padding-bottom: 56px; 
+  }
+
+  .swiper-slide {
+    padding: 0 4px;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    font-size: 18px;
+  }
+}
+

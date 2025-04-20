@@ -1,0 +1,16 @@
+# Node.js dependencies
+node_modules/
+
+# Local environment variables (Don't push sensitive info like API keys)
+.env
+
+# Vercel and Heroku deployment files
+.vercel/
+.render/
+
+# Build directories
+/dist
+/build
+
+# Logs
+*.log
