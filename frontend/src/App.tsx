@@ -11,7 +11,7 @@ const App: React.FC = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/products');
+        const response = await fetch('https://product-listing-api.onrender.com/api/products');
         if (!response.ok) {
           throw new Error('Failed to fetch products');
         }
